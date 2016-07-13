@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lUT-o8-Sag">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JqE-oL-EZ6">
+            <objects>
+                <tabBarController id="lUT-o8-Sag" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mKF-31-ICg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fgO-gV-gC1"/>
+                        <segue destination="p0V-AD-JPn" kind="relationship" relationship="viewControllers" id="Gza-Pa-B0F"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYu-Ia-gqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-885" y="-44"/>
+        </scene>
+        <!--Objective C-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-UF-9Yc" customClass="OCView">
+                                <rect key="frame" x="180" y="260" width="240" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LN6-lV-HCZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="t5J-CJ-Ewc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-HV-6g5">
+                                <rect key="frame" x="275" y="320" width="50" height="30"/>
+                                <state key="normal" title="Default">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fxt-en-Obq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGd-Db-XI9">
+                                <rect key="frame" x="233" y="358" width="135" height="30"/>
+                                <state key="normal" title="Ease Out &amp; Reverse">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="easeOutAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9i-tf-nAe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-Jj-i9j">
+                                <rect key="frame" x="278" y="396" width="45" height="30"/>
+                                <state key="normal" title="Spring">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="springAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35M-FX-fir"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zVV-UF-9Yc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="82z-rZ-P25"/>
+                            <constraint firstItem="hjS-HV-6g5" firstAttribute="top" secondItem="zVV-UF-9Yc" secondAttribute="bottom" constant="20" id="H8b-xF-fbx"/>
+                            <constraint firstItem="XL6-Jj-i9j" firstAttribute="top" secondItem="IGd-Db-XI9" secondAttribute="bottom" constant="8" id="amk-dm-sHX"/>
+                            <constraint firstItem="IGd-Db-XI9" firstAttribute="top" secondItem="hjS-HV-6g5" secondAttribute="bottom" constant="8" id="dvA-a7-XIl"/>
+                            <constraint firstItem="zVV-UF-9Yc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j8Q-1A-Fiq"/>
+                            <constraint firstItem="hjS-HV-6g5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q7p-if-MsQ"/>
+                            <constraint firstItem="IGd-Db-XI9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tus-tG-osh"/>
+                            <constraint firstItem="XL6-Jj-i9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNa-1f-53k"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Objective C" id="lLw-ke-yV8"/>
+                    <connections>
+                        <outlet property="animView" destination="zVV-UF-9Yc" id="ujy-z0-Gw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="-384"/>
+        </scene>
+        <!--Swift-->
+        <scene sceneID="GsW-GZ-TAl">
+            <objects>
+                <viewController id="p0V-AD-JPn" customClass="SWViewController" customModule="UIViewCustomPropertyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pjH-ab-epR"/>
+                        <viewControllerLayoutGuide type="bottom" id="GhE-3P-qDv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="du1-sf-QLy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-n3-7eL" customClass="SWView" customModule="UIViewCustomPropertyAnimation" customModuleProvider="target">
+                                <rect key="frame" x="180" y="260" width="240" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="I2B-WO-S3o"/>
+                                    <constraint firstAttribute="width" constant="240" id="UOO-e4-FMx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-iC-MhO">
+                                <rect key="frame" x="275" y="320" width="50" height="30"/>
+                                <state key="normal" title="Default">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="aUC-ep-3Jd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXz-cR-Pey">
+                                <rect key="frame" x="233" y="358" width="135" height="30"/>
+                                <state key="normal" title="Ease Out &amp; Reverse">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="easeOutAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="jIi-iy-wae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-Dn-6lN">
+                                <rect key="frame" x="278" y="396" width="45" height="30"/>
+                                <state key="normal" title="Spring">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="springAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="OQv-xk-kFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46950468817147883" blue="0.038677437326387065" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ooh-Dn-6lN" firstAttribute="top" secondItem="DXz-cR-Pey" secondAttribute="bottom" constant="8" id="0lc-Pc-kds"/>
+                            <constraint firstItem="xeV-n3-7eL" firstAttribute="centerX" secondItem="du1-sf-QLy" secondAttribute="centerX" id="99k-60-g2R"/>
+                            <constraint firstItem="EAb-iC-MhO" firstAttribute="top" secondItem="xeV-n3-7eL" secondAttribute="bottom" constant="20" id="CIX-XQ-heI"/>
+                            <constraint firstItem="DXz-cR-Pey" firstAttribute="centerX" secondItem="du1-sf-QLy" secondAttribute="centerX" id="VMg-Te-N1A"/>
+                            <constraint firstItem="DXz-cR-Pey" firstAttribute="top" secondItem="EAb-iC-MhO" secondAttribute="bottom" constant="8" id="fxS-Pp-Cdl"/>
+                            <constraint firstItem="EAb-iC-MhO" firstAttribute="centerX" secondItem="du1-sf-QLy" secondAttribute="centerX" id="hWq-6c-WJP"/>
+                            <constraint firstItem="xeV-n3-7eL" firstAttribute="bottom" secondItem="du1-sf-QLy" secondAttribute="centerY" id="ilj-dU-EuJ"/>
+                            <constraint firstItem="ooh-Dn-6lN" firstAttribute="centerX" secondItem="du1-sf-QLy" secondAttribute="centerX" id="tfS-HU-bYg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swift" id="LYg-RO-lJ1"/>
+                    <connections>
+                        <outlet property="animView" destination="xeV-n3-7eL" id="ype-PC-a0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJk-l3-7a5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="303"/>
+        </scene>
+    </scenes>
+</document>
