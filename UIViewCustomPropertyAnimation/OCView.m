@@ -35,7 +35,7 @@
 
 - (void)displayLayer:(CALayer *)layer
 {
-    CGFloat percent = [self.layer.presentationLayer percent];
+    CGFloat percent = [(OCLayer*)self.layer.presentationLayer percent];
     CGFloat width = CGRectGetWidth(self.frame) * (percent / 100);
     self.percentView.frame = CGRectMake(0, 0, width, CGRectGetHeight(self.frame));
     self.label.text = [NSString stringWithFormat:@"%.0f", floorf(percent)];
