@@ -14,16 +14,16 @@ class SWViewController: UIViewController {
     
     @IBAction func defaultAnimation(sender: AnyObject) {
         self.animView?.percent = 0
-        UIView.animateWithDuration(SWViewController.kAnimDuration) {
+		UIView.animate(withDuration: SWViewController.kAnimDuration) {
             self.animView?.percent = 100.0
         }
     }
     
     @IBAction func easeOutAnimation(sender: AnyObject) {
         self.animView?.percent = 0
-        UIView.animateWithDuration(SWViewController.kAnimDuration,
+		UIView.animate(withDuration: SWViewController.kAnimDuration,
                                    delay: 0.0,
-                                   options:[.CurveEaseOut, .Autoreverse],
+								   options:[.curveEaseOut, .autoreverse],
                                    animations: {
                                     self.animView?.percent = 100.0
             },
@@ -37,7 +37,7 @@ class SWViewController: UIViewController {
     
     @IBAction func springAnimation(sender: AnyObject) {
         self.animView?.percent = 0
-        UIView.animateWithDuration(SWViewController.kAnimDuration, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.6, options: [], animations: {
+		UIView.animate(withDuration: SWViewController.kAnimDuration, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.6, options: [], animations: {
             self.animView?.percent = 100.0
             }, completion: nil)
     }

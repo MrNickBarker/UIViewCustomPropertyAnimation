@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lUT-o8-Sag">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lUT-o8-Sag">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -13,7 +16,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mKF-31-ICg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fgO-gV-gC1"/>
@@ -33,46 +36,46 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-UF-9Yc" customClass="OCView">
-                                <rect key="frame" x="180" y="260" width="240" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="67.5" y="293.5" width="240" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="LN6-lV-HCZ"/>
                                     <constraint firstAttribute="height" constant="40" id="t5J-CJ-Ewc"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-HV-6g5">
-                                <rect key="frame" x="275" y="320" width="50" height="30"/>
+                                <rect key="frame" x="162.5" y="353.5" width="50" height="30"/>
                                 <state key="normal" title="Default">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="defaultAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fxt-en-Obq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGd-Db-XI9">
-                                <rect key="frame" x="233" y="358" width="135" height="30"/>
+                                <rect key="frame" x="120" y="391.5" width="135" height="30"/>
                                 <state key="normal" title="Ease Out &amp; Reverse">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="easeOutAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9i-tf-nAe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL6-Jj-i9j">
-                                <rect key="frame" x="278" y="396" width="45" height="30"/>
+                                <rect key="frame" x="165" y="429.5" width="45" height="30"/>
                                 <state key="normal" title="Spring">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="springAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35M-FX-fir"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zVV-UF-9Yc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="82z-rZ-P25"/>
                             <constraint firstItem="hjS-HV-6g5" firstAttribute="top" secondItem="zVV-UF-9Yc" secondAttribute="bottom" constant="20" id="H8b-xF-fbx"/>
@@ -102,46 +105,46 @@
                         <viewControllerLayoutGuide type="bottom" id="GhE-3P-qDv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="du1-sf-QLy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-n3-7eL" customClass="SWView" customModule="UIViewCustomPropertyAnimation" customModuleProvider="target">
-                                <rect key="frame" x="180" y="260" width="240" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="67.5" y="293.5" width="240" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="I2B-WO-S3o"/>
                                     <constraint firstAttribute="width" constant="240" id="UOO-e4-FMx"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-iC-MhO">
-                                <rect key="frame" x="275" y="320" width="50" height="30"/>
+                                <rect key="frame" x="162.5" y="353.5" width="50" height="30"/>
                                 <state key="normal" title="Default">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="defaultAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="aUC-ep-3Jd"/>
+                                    <action selector="defaultAnimationWithSender:" destination="p0V-AD-JPn" eventType="touchUpInside" id="jHn-0l-QZb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXz-cR-Pey">
-                                <rect key="frame" x="233" y="358" width="135" height="30"/>
+                                <rect key="frame" x="120" y="391.5" width="135" height="30"/>
                                 <state key="normal" title="Ease Out &amp; Reverse">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="easeOutAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="jIi-iy-wae"/>
+                                    <action selector="easeOutAnimationWithSender:" destination="p0V-AD-JPn" eventType="touchUpInside" id="cJo-EU-jpD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-Dn-6lN">
-                                <rect key="frame" x="278" y="396" width="45" height="30"/>
+                                <rect key="frame" x="165" y="429.5" width="45" height="30"/>
                                 <state key="normal" title="Spring">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="springAnimation:" destination="p0V-AD-JPn" eventType="touchUpInside" id="OQv-xk-kFs"/>
+                                    <action selector="springAnimationWithSender:" destination="p0V-AD-JPn" eventType="touchUpInside" id="f3V-yl-3b0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.46950468817147883" blue="0.038677437326387065" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.46950468817147883" blue="0.038677437326387065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ooh-Dn-6lN" firstAttribute="top" secondItem="DXz-cR-Pey" secondAttribute="bottom" constant="8" id="0lc-Pc-kds"/>
                             <constraint firstItem="xeV-n3-7eL" firstAttribute="centerX" secondItem="du1-sf-QLy" secondAttribute="centerX" id="99k-60-g2R"/>

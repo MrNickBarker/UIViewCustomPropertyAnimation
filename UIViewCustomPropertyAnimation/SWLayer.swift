@@ -15,7 +15,7 @@ class SWLayer: CALayer {
         super.init()
     }
     
-    override init(layer: AnyObject) {
+	override init(layer: Any) {
         super.init(layer: layer)
         if let layer = layer as? SWLayer {
             percent = layer.percent
@@ -30,18 +30,18 @@ class SWLayer: CALayer {
         return key == "percent"
     }
     
-    override class func needsDisplayForKey(key: String) -> Bool {
-        if self.isCustomAnimKey(key) {
+	override class func needsDisplay(forKey key: String) -> Bool {
+		if self.isCustomAnimKey(key: key) {
             return true
         }
-        return super.needsDisplayForKey(key)
+		return super.needsDisplay(forKey: key)
     }
     
-    override func actionForKey(event: String) -> CAAction? {
-        if SWLayer.isCustomAnimKey(event) {
-            if let animation = super.actionForKey("backgroundColor") as? CABasicAnimation {
+	override func action(forKey event: String) -> CAAction? {
+		if SWLayer.isCustomAnimKey(key: event) {
+			if let animation = super.action(forKey: "backgroundColor") as? CABasicAnimation {
                 animation.keyPath = event
-                if let pLayer = presentationLayer() {
+				if let pLayer = presentation() {
                     animation.fromValue = pLayer.percent
                 }
                 animation.toValue = nil
@@ -50,6 +50,6 @@ class SWLayer: CALayer {
             setNeedsDisplay()
             return nil
         }
-        return super.actionForKey(event)
+		return super.action(forKey: event)
     }
 }
